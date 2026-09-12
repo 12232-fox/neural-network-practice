@@ -1,0 +1,43 @@
+# Виртуальные окружения
+venv/
+env/
+.venv/
+ENV/
+
+# Python кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Логи и временные файлы
+logs/
+*.log
+*.tmp
+
+# Данные (можно исключить, чтобы не загружать большие файлы в репозиторий)
+data/
+*.npy
+*.npz
+*.csv
+*.jpg
+*.png
+*.jpeg
+
+# Конфигурационные файлы с секретами
+.env
+.env.local
+.env.*.local
+
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Скомпилированные файлы
+*.so
+*.egg-info/
+dist/
+build/

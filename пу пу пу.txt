@@ -1,0 +1,24 @@
+1.
+cd C:\Users\user\Desktop\neural_network_practice
+
+python -m part1_mlp.app.main
+
+C:\Users\user\Desktop\neural_network_practice\data\input\iris.csv
+
+my_weights.json
+
+
+2.
+
+cd C:\Users\user\Desktop\neural_network_practice
+
+python -m part2_prepare.app prepare --path data/input --ext .csv --output data/output/test.npy
+python -m part2_prepare.app doctor
+python -m part2_prepare.app --version
+python -m part2_prepare.app prepare --help
+python -m part2_prepare.app doctor --help
+
+3.
+cd C:\Users\user\Desktop\neural_network_practice
+
+python -m part3_parallel.app bench --path data/input --ext .jpg --consumers 4 --processes 4
