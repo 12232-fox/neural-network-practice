@@ -21,15 +21,25 @@
 ## Структура
 
 part3_parallel/
+
 ├── app/
+
 │ ├── init.py
+
 │ ├── main.py
+
 │ ├── cli.py
+
 │ ├── config.py
+
 │ ├── logging_config.py
+
 │ ├── augment.py
+
 │ ├── producer_consumer.py
+
 │ └── performance.py
+
 └── README.md
 
 ## Настройка
