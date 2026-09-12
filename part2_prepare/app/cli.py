@@ -15,12 +15,7 @@ from .scanner import prepare_data
 
 logger = logging.getLogger(__name__)
 
-
-# --------------------------------------------------------------------------- #
 # prepare
-# --------------------------------------------------------------------------- #
-
-
 def _parse_image_size(raw: str | None) -> tuple[int, int] | None:
     """Парсит строку вида '224x224' в кортеж (W, H)."""
     if not raw:
@@ -77,12 +72,7 @@ def _cmd_prepare(args: argparse.Namespace, config: dict) -> int:
         print(f"{key}: {value}")
     return 0
 
-
-# --------------------------------------------------------------------------- #
 # doctor
-# --------------------------------------------------------------------------- #
-
-
 def _check_library(name: str, import_name: str | None = None) -> tuple[bool, str]:
     """
     Проверяет, установлена ли библиотека.
@@ -175,12 +165,7 @@ def _cmd_doctor(args: argparse.Namespace, config: dict) -> int:
         print("Все проверяемые библиотеки установлены.")
     return 0
 
-
-# --------------------------------------------------------------------------- #
 # main
-# --------------------------------------------------------------------------- #
-
-
 def build_parser() -> argparse.ArgumentParser:
     """Собирает парсер аргументов командной строки."""
     parser = argparse.ArgumentParser(
