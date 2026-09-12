@@ -25,13 +25,21 @@
 ## Структура
 
 part2_prepare/
+
 ├── app/
+
 │ ├── init.py
+
 │ ├── main.py
+
 │ ├── cli.py
+
 │ ├── config.py
+
 │ ├── logging_config.py
+
 │ └── scanner.py
+
 └── README.md
 
 ## Установка
