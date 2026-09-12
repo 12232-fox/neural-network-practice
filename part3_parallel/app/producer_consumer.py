@@ -52,10 +52,7 @@ class DataProcessor:
         self.processed_count = 0
         self.total_files = 0
 
-    # ------------------------------------------------------------------ #
     # Producer / consumer
-    # ------------------------------------------------------------------ #
-
     def _producer(self) -> None:
         """Кладёт пути к файлам в file_queue и завершает работу."""
         for ext in self.extensions:
@@ -97,10 +94,7 @@ class DataProcessor:
             self.array_queue.put(None)
             logger.info("Consumer: завершён.")
 
-    # ------------------------------------------------------------------ #
     # Последовательная версия
-    # ------------------------------------------------------------------ #
-
     def run_sequential(self) -> tuple[int, float]:
         """Последовательная обработка (без потоков и процессов)."""
         start = time.perf_counter()
@@ -124,10 +118,7 @@ class DataProcessor:
         elapsed = time.perf_counter() - start
         return count, elapsed
 
-    # ------------------------------------------------------------------ #
     # Параллельная версия
-    # ------------------------------------------------------------------ #
-
     def run_parallel(self) -> tuple[int, float]:
         """Producer → consumers (threads) → augment (processes)."""
         start = time.perf_counter()
