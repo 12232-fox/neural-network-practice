@@ -29,13 +29,21 @@
 ## Структура
 
 part1_mlp/
+
 ├── app/
+
 │ ├── init.py
+
 │ ├── main.py
+
 │ ├── models.py
+
 │ ├── manager.py
+
 │ ├── exceptions.py
+
 │ └── utils.py
+
 └── README.md
 
 ## Установка
