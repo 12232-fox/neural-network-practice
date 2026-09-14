@@ -1,0 +1,18 @@
+{
+  "input_dir": "data/input",
+  "extensions": [
+    ".jpg"
+  ],
+  "num_consumers": 8,
+  "num_processes": 8,
+  "sequential": {
+    "count": 10,
+    "time": 0.0397
+  },
+  "parallel": {
+    "count": 10,
+    "time": 0.5348
+  },
+  "speedup": 0.074,
+  "timestamp": "2026-09-12T20:14:53.438133+00:00"
+}
